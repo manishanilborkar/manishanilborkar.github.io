@@ -1,19 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Manish Borkar | Personal Website</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
         content="Personal academic website of Manish Anil Borkar, Junior Research Fellow at IIT Jodhpur."
     >
 
+    <title>Manish Borkar | Digital VLSI and FPGA Research</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet"
@@ -30,12 +35,12 @@
 
         body {
             margin: 0;
-            border-top: 6px solid #444;
+            border-top: 6px solid #444444;
             background: #ffffff;
-            color: #111;
+            color: #111111;
             font-family: "Lato", Arial, sans-serif;
             font-size: 20px;
-            line-height: 1.5;
+            line-height: 1.48;
         }
 
         a {
@@ -75,11 +80,11 @@
         }
 
         .archive-link {
-            color: #111;
+            color: #111111;
             font-size: 18px;
         }
 
-        /* Main layout */
+        /* Main page layout */
 
         .main-container {
             display: grid;
@@ -90,7 +95,7 @@
             padding: 56px 25px 80px;
         }
 
-        /* Profile photograph */
+        /* Profile photo */
 
         .profile-column {
             text-align: center;
@@ -100,23 +105,24 @@
             width: 260px;
             height: 310px;
             object-fit: cover;
-            border: 6px solid #555;
+            object-position: center;
+            border: 6px solid #555555;
             border-radius: 50%;
             background: #eeeeee;
         }
 
-        /* Biography */
+        /* Main content */
 
         .content-column {
             max-width: 920px;
         }
 
         .content-column p {
-            margin: 0 0 20px;
+            margin: 0 0 21px;
         }
 
         .contact-details {
-            margin-top: 28px;
+            margin-top: 27px;
             padding-top: 20px;
             border-top: 1px solid #e5e5e5;
         }
@@ -129,44 +135,66 @@
         }
 
         .contact-label {
-            min-width: 105px;
+            min-width: 110px;
             font-weight: 700;
         }
 
         /* Projects */
 
         .projects-section {
-            margin-top: 28px;
+            margin-top: 30px;
         }
 
         .projects-title {
-            margin: 0 0 24px;
+            margin: 0 0 25px;
             font-size: 38px;
             font-weight: 400;
         }
 
         .project-item {
-            margin-bottom: 36px;
+            margin-bottom: 38px;
         }
 
         .project-date {
             display: block;
-            margin-bottom: 6px;
-            color: #888;
+            margin-bottom: 5px;
+            color: #888888;
             font-size: 16px;
         }
 
         .project-name {
-            display: inline-block;
             margin-bottom: 8px;
+            color: #1769ff;
             font-size: 30px;
             font-weight: 300;
+            line-height: 1.25;
         }
 
         .project-description {
             margin: 0;
-            color: #333;
+            color: #333333;
             font-size: 18px;
+        }
+
+        /* Skills */
+
+        .skills-section {
+            margin-top: 45px;
+        }
+
+        .skills-title {
+            margin-bottom: 18px;
+            font-size: 34px;
+            font-weight: 400;
+        }
+
+        .skills-list {
+            margin: 0;
+            padding-left: 23px;
+        }
+
+        .skills-list li {
+            margin-bottom: 8px;
         }
 
         /* Footer */
@@ -174,12 +202,12 @@
         .site-footer {
             padding: 25px;
             border-top: 1px solid #e5e5e5;
-            color: #777;
+            color: #777777;
             font-size: 15px;
             text-align: center;
         }
 
-        /* Mobile layout */
+        /* Tablet and mobile */
 
         @media (max-width: 850px) {
             body {
@@ -252,11 +280,19 @@
 
     <header class="site-header">
         <div class="header-container">
+
             <div></div>
 
             <div class="header-content">
-                <h1 class="site-name">Manish Anil Borkar</h1>
-                <a class="archive-link" href="#projects">Project Archive</a>
+
+                <h1 class="site-name">
+                    Manish Anil Borkar
+                </h1>
+
+                <a class="archive-link" href="#projects">
+                    Project Archive
+                </a>
+
             </div>
         </div>
     </header>
@@ -265,11 +301,11 @@
 
         <aside class="profile-column">
 
-            <!-- Upload your photograph as profile.jpg -->
+            <!-- The filename exactly matches your uploaded photograph -->
             <img
                 class="profile-photo"
-                src="img_0904.jpg"
-                alt="Photograph of Manish Anil Borkar"
+                src="IMG_0904.JPG"
+                alt="Manish Anil Borkar"
             >
 
         </aside>
@@ -277,10 +313,12 @@
         <section class="content-column">
 
             <p>
-                Manish is a
-                <strong>Junior Research Fellow</strong> in the
-                <strong>Department of Electronics Engineering, IIT Jodhpur</strong>.
-                He is currently working on an ISRO-funded project titled
+                I am a <strong>Junior Research Fellow</strong> in the
+                <strong>
+                    Department of Electronics Engineering at the Indian
+                    Institute of Technology Jodhpur
+                </strong>.
+                I am currently contributing to the ISRO-sponsored project
                 <strong>
                     “High-Level Synthesizable Digital Designs Modelled by
                     using C/C++/Python.”
@@ -288,38 +326,47 @@
             </p>
 
             <p>
-                His work focuses on developing digital hardware from high-level
-                C/C++ models to synthesizable RTL and working FPGA systems.
-                His experience includes hardware architecture design,
-                High-Level Synthesis, RTL integration, AXI interfaces,
-                FPGA implementation and functional verification.
+                My work focuses on developing synthesizable digital hardware
+                using C++, High-Level Synthesis and FPGA platforms. I work
+                through the complete design flow, beginning with C simulation
+                and C/RTL co-simulation and continuing through RTL generation,
+                IP packaging, Vivado block-design integration, synthesis,
+                implementation, timing analysis and hardware testing.
             </p>
 
             <p>
-                He is currently working on a
-                <strong>DDR4 HLS controller</strong>,
-                <strong>Digital Predistortion hardware</strong> and a
-                <strong>JESD204B/C communication model</strong>.
-                His work involves Vitis HLS, Vivado, SystemVerilog, Questa
-                and FPGA boards such as the ZCU104, ZCU102 and Zybo Z7.
+                I am currently developing an HLS-based DDR4 controller
+                scheduler that supports bank and row management, command
+                scheduling, refresh handling, burst transfers, timing
+                constraints and AXI-based interfaces. I am also developing a
+                Digital Predistortion hardware module using memory-polynomial
+                and LUT-based techniques with AXI4-Stream interfaces.
             </p>
 
             <p>
-                His research interests include
-                <strong>Digital VLSI Design</strong>,
-                <strong>FPGA-based systems</strong>,
-                <strong>High-Level Synthesis</strong>,
-                <strong>hardware accelerators</strong> and
-                <strong>energy-efficient Edge AI hardware</strong>.
+                I have developed a JESD204B transport and link-layer model
+                supporting multi-lane data mapping, K28.5 synchronization and
+                8b/10b encoding and decoding. I validate my hardware designs on
+                ZCU102, ZCU104 and Zybo Z7 FPGA platforms and evaluate their
+                latency, throughput, timing performance and resource
+                utilization.
             </p>
 
             <p>
-                Before joining IIT Jodhpur, he completed his
+                I completed my
                 <strong>
-                    B.Tech in Electronics and Telecommunication Engineering
+                    Bachelor of Technology in Electronics and
+                    Telecommunication Engineering
                 </strong>
                 from Government College of Engineering, Amravati, under
-                Sant Gadge Baba Amravati University.
+                Sant Gadge Baba Amravati University in July 2023. I graduated
+                with a CGPA of <strong>7.37/10</strong>.
+            </p>
+
+            <p>
+                My research interests include Digital VLSI Design, FPGA and
+                SoC Design, High-Level Synthesis, memory-system design, RTL
+                verification, computer architecture and hardware acceleration.
             </p>
 
             <div class="contact-details">
@@ -327,30 +374,28 @@
                 <div class="contact-row">
                     <span class="contact-label">EMAIL:</span>
 
-                    <a href="mailto:manishborkar016@gmail.com">
-                        manishborkar016@gmail.com
+                    <a href="mailto:manishborkar009@gmail.com">
+                        manishborkar009@gmail.com
                     </a>
                 </div>
 
                 <div class="contact-row">
                     <span class="contact-label">PHONE:</span>
 
-                    <!-- Replace with your actual telephone number -->
-                    <a href="tel:+91XXXXXXXXXX">
-                        +91 XXXXX XXXXX
+                    <a href="tel:+917020663889">
+                        +91-7020663889
                     </a>
                 </div>
 
                 <div class="contact-row">
                     <span class="contact-label">LINKEDIN:</span>
 
-                    <!-- Replace YOUR-LINKEDIN-USERNAME -->
                     <a
-                        href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+                        href="https://www.linkedin.com/in/manish-856100207"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        View LinkedIn profile
+                        linkedin.com/in/manish-856100207
                     </a>
                 </div>
 
@@ -370,64 +415,145 @@
 
             <section class="projects-section" id="projects">
 
-                <h2 class="projects-title">Projects</h2>
+                <h2 class="projects-title">
+                    Projects
+                </h2>
 
                 <article class="project-item">
-                    <span class="project-date">2025 – Present</span>
 
-                    <a class="project-name" href="#">
-                        DDR4 Controller Using High-Level Synthesis
-                    </a>
+                    <span class="project-date">
+                        Current research work
+                    </span>
+
+                    <div class="project-name">
+                        HLS-Based DDR4 Controller
+                    </div>
 
                     <p class="project-description">
-                        Development and verification of an HLS-based DDR4
-                        controller with bank and row management, refresh
-                        scheduling, programmable timing parameters and
-                        AXI interfaces.
+                        I am developing a DDR4 controller scheduler with bank
+                        and row management, command scheduling, refresh
+                        handling, burst transfers, timing constraints and
+                        AXI-based interfaces. I am also performing RTL
+                        verification and FPGA validation of the generated
+                        design.
                     </p>
+
                 </article>
 
                 <article class="project-item">
-                    <span class="project-date">2026</span>
 
-                    <a class="project-name" href="#">
-                        FPGA-Based Digital Predistortion
-                    </a>
+                    <span class="project-date">
+                        Current research work
+                    </span>
+
+                    <div class="project-name">
+                        Digital Predistortion Hardware
+                    </div>
 
                     <p class="project-description">
-                        Implementation of a memory-polynomial and LUT-based
-                        Digital Predistortion architecture using HLS,
-                        AXI4-Stream interfaces and FPGA integration.
+                        I am developing a Digital Predistortion hardware module
+                        using memory-polynomial and LUT-based techniques. The
+                        design uses AXI4-Stream interfaces for transferring
+                        digital samples and is being prepared for FPGA
+                        implementation and hardware testing.
                     </p>
+
                 </article>
 
                 <article class="project-item">
-                    <span class="project-date">2026</span>
 
-                    <a class="project-name" href="#">
-                        JESD204B/C Communication Model
-                    </a>
+                    <span class="project-date">
+                        IIT Jodhpur research work
+                    </span>
+
+                    <div class="project-name">
+                        JESD204B Transport and Link-Layer Model
+                    </div>
 
                     <p class="project-description">
-                        Development of a synthesizable transmitter and receiver
-                        path with 8b/10b encoding and decoding for high-speed
-                        converter data communication.
+                        I developed a JESD204B transport and link-layer model
+                        supporting multi-lane data mapping, K28.5
+                        synchronization and 8b/10b encoding and decoding.
                     </p>
+
                 </article>
 
                 <article class="project-item">
-                    <span class="project-date">2026</span>
 
-                    <a class="project-name" href="#">
-                        HLS RTL Testbench and Coverage Analysis
-                    </a>
+                    <span class="project-date">
+                        2023
+                    </span>
+
+                    <div class="project-name">
+                        AXI4 Memory-Mapped Hardware IP Using Vitis HLS
+                    </div>
 
                     <p class="project-description">
-                        SystemVerilog testbench generation and coverage analysis
-                        for HLS-generated RTL using Questa, functional coverage
-                        and coverage-guided verification.
+                        I developed synthesizable C++ hardware modules using
+                        AXI4 Master and AXI4-Lite Slave interfaces. I generated
+                        the RTL using AMD Vitis HLS, packaged it as reusable
+                        hardware IP and integrated it into a Zynq-7000 Vivado
+                        block design.
                     </p>
+
                 </article>
+
+                <article class="project-item">
+
+                    <span class="project-date">
+                        2023
+                    </span>
+
+                    <div class="project-name">
+                        RTL Design and Verification of a Fibonacci Generator
+                    </div>
+
+                    <p class="project-description">
+                        I designed a hierarchical and synthesizable Verilog RTL
+                        architecture using register, arithmetic, control and
+                        output modules. I also developed a testbench and
+                        verified the sequence generation, reset operation and
+                        control behaviour using QuestaSim and Synopsys VCS.
+                    </p>
+
+                </article>
+
+            </section>
+
+            <section class="skills-section">
+
+                <h2 class="skills-title">
+                    Technical Skills
+                </h2>
+
+                <ul class="skills-list">
+                    <li>
+                        <strong>Programming:</strong>
+                        C, C++ and Python
+                    </li>
+
+                    <li>
+                        <strong>Hardware description language:</strong>
+                        Verilog
+                    </li>
+
+                    <li>
+                        <strong>EDA and simulation tools:</strong>
+                        AMD Vivado, AMD Vitis HLS, QuestaSim and
+                        Intel Quartus Prime
+                    </li>
+
+                    <li>
+                        <strong>FPGA platforms:</strong>
+                        ZCU102, ZCU104, Zybo Z7-20, Basys 3 and DE0-Nano
+                    </li>
+
+                    <li>
+                        <strong>Core areas:</strong>
+                        Digital VLSI, RTL design, FPGA design, High-Level
+                        Synthesis, RTL verification and hardware acceleration
+                    </li>
+                </ul>
 
             </section>
 
